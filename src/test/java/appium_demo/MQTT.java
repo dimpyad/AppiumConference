@@ -109,15 +109,15 @@ public class MQTT {
 	    {
 	     	driverEspresso = createDriver("Espresso", "com.ravendmaster.linearmqttdashboard", ".activity.MainActivity","4723","036f84c9");
 	      	
-			driverUIAutomator =  createDriver("UIAutomator2","com.app.vetru.mqttdashboard",".ui.Activity_Main","4723","7cbdd94d");
+		driverUIAutomator =  createDriver("UIAutomator2","com.app.vetru.mqttdashboard",".ui.Activity_Main","4723","7cbdd94d");
 			
-			testEspressBefore(driverEspresso);
+		testEspressBefore(driverEspresso);
 			
-			testBatteryInfo(driverUIAutomator);
+		testBatteryInfo(driverUIAutomator);
 			
-			testUIAutomatorPublishMsgSwitchOn(driverUIAutomator);
+		testUIAutomatorPublishMsgSwitchOn(driverUIAutomator);
 			
-			testUIAutomatorValidateNotification(driverUIAutomator);
+		testUIAutomatorValidateNotification(driverUIAutomator);
 	    		    	
 	    	testEspressoAfter(driverEspresso);	
 	    	
