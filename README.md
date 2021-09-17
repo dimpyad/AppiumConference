@@ -10,9 +10,9 @@ Apps used as part of the demo:
 Prerequisites:
 -------------
 Code:
-   Java
-   Appium
-   Junit
+   1. Java
+   2. Appium
+   3. Junit
 
 Apps:
 Deshboard App
@@ -35,4 +35,5 @@ AlertApp:
 Execution Steps:
 ----------------
 1) Prepare two devices one for the Deshboard app (debug App) and another one for the Publisher App and Alert App
-2) Run the file MQTT.java as junit tests
+2) Run appium server
+3) Run the file MQTT.java as junit tests
