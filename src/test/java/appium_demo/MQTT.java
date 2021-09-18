@@ -47,7 +47,7 @@ public class MQTT {
 	    @Test
 	    public void test_02_ColorPicker() throws MalformedURLException, InterruptedException
 	    {
-	    	driverEspresso = createDriver("Espresso", "com.ravendmaster.linearmqttdashboard", ".activity.MainActivity","4723", "036f84c9");
+	    	driverEspresso = createDriver("Espresso", "com.ravendmaster.linearmqttdashboard", ".activity.MainActivity","4723", "udid");
 	    	
 	    	//Clicking on Edit pay mode option
 	    	WebElement editPlayMode = driverEspresso.findElement(MobileBy.id("Edit_play_mode"));
