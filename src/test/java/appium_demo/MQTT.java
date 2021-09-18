@@ -107,9 +107,9 @@ public class MQTT {
 	    @Test  
 	    public void test_01_MQTTPannelUpdates() throws MalformedURLException, InterruptedException
 	    {
-	     	driverEspresso = createDriver("Espresso", "com.ravendmaster.linearmqttdashboard", ".activity.MainActivity","4723","036f84c9");
+	     	driverEspresso = createDriver("Espresso", "com.ravendmaster.linearmqttdashboard", ".activity.MainActivity","4723","udid_device1");
 	      	
-		driverUIAutomator =  createDriver("UIAutomator2","com.app.vetru.mqttdashboard",".ui.Activity_Main","4723","7cbdd94d");
+		driverUIAutomator =  createDriver("UIAutomator2","com.app.vetru.mqttdashboard",".ui.Activity_Main","4723","udid_device2");
 			
 		testEspressBefore(driverEspresso);
 			
@@ -200,7 +200,7 @@ public class MQTT {
 	    		String alertText = notificationTitles.get(i).getText();
 	    		if(alertText.contains("MQTT Alert"))
 	    		{
-	    			if(!alertText.contains("service1"))
+	    			if(!alertText.contains("service"))
 	    			{
 	    				notificationTitles.get(i).click();
 	    				System.out.println("\nMQTT Alert detected\n");
